@@ -43,6 +43,9 @@
     border: 2px solid white;
     color: #79f23f;
 }
+.button-green:hover .link{
+    color: #79f23f;
+}
 
 @media screen and (max-width: 768px) {
     .main-part{
