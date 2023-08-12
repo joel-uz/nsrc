@@ -85,6 +85,7 @@ section .top {
   border-radius: 15px;
   box-shadow: 5px 10px rgba(139, 137, 137,0.8);
   transition: all 0.3s ease-in-out;
+  background:linear-gradient(270deg, rgba(98,249,123,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .time-heading{
