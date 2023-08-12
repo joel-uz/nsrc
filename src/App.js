@@ -12,6 +12,7 @@ import TimeLine from './timeline';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <TimeLine/>
       <DetailsPage/>
       <Venue/>
