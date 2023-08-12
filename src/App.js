@@ -6,10 +6,13 @@ import Fab from "@mui/material/Fab";
 import Venue from './venue';
 import Footer from './footer';
 import DetailsPage from './details';
+import Navbar from './navbar';
+import TimeLine from './timeline';
 
 function App() {
   return (
     <div className="App">
+      <TimeLine/>
       <DetailsPage/>
       <Venue/>
       <PartPage />

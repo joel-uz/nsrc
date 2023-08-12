@@ -1,0 +1,102 @@
+body{
+    
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+  --green: #79f23f;
+
+  --background: var(--black);
+  --accent: var(--green);
+}
+
+.top:hover{
+  padding: 30px;
+}
+
+.time-main{
+  margin-top: 5%;
+}
+
+.progress {
+  position: sticky;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.progress svg {
+  transform: translateX(0px) rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 5%;
+  fill: none;
+}
+
+.bg {
+  stroke: var(--accent);
+  opacity: 0.2;
+}
+
+.progress .indicator {
+  stroke: var(--accent);
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+
+section {
+  height: max-content;
+  margin: 4% 0px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .top {
+  width: 70%;
+  height: auto;
+  border: 2px solid black;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 5px 10px rgba(139, 137, 137,0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.time-heading{
+    font-family: 'JetBrains Mono';
+    font-size: 150%;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+.time-event{
+    font-family: "Poppins";
+    font-size: 220%;
+    font-weight: 600;
+    text-align: center;
+}

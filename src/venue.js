@@ -26,7 +26,7 @@ const Venue = () => {
                         width="600"
                         title='maps-nitc'
                         className='maps-frame'
-                    height="450"
+                        height="450"
                     style={{border:"0"}}
                     >
                 </iframe>
