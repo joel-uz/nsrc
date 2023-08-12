@@ -47,7 +47,7 @@ export default function TimeLine() {
   return (
     <div className="time-main">
       <h1 className="title">TimeLine</h1>
-      <div>
+      <div className="items">
         <Item id={0}/>
         <Item id={1}/>
         <Item id={2}/>

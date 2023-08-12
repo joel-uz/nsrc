@@ -103,6 +103,7 @@
     .contact-text{
         display: flex;
         flex-direction: column;
+
     }
     .subs{
         margin: 15px auto;
@@ -110,7 +111,6 @@
     .title-dub{
         font-size: 36px;
         width: max-content;
-        margin-left: 20px;
         margin-right: 20px;
     }
     .title{

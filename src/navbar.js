@@ -36,29 +36,30 @@ const Navbar = () => {
     if(isMobile)
     setIsMobile(false);
     else
-    setIsMobile(true);
+      setIsMobile(true);
   }
   return (
-    <>
+    <div className='top-part-nav'>
     <div className='navbar'>
       <div className='logo'>
         <img src={Logo} alt='logo' className='logo-resizer'/>
       </div>
       <div className={isMobile ? "nav-items-mobile" : "nav-items"} >
-        <li><a href="/#" className={isActive1 ? 'active' : ''} onClick={handleClick1}>Home</a></li>
-        <li><a href="#time" className={isActive2 ? 'active' : ''} onClick={handleClick2}>TimeLine</a></li>
-        <li><a href="#details" className={isActive3 ? 'active' : ''} onClick={handleClick3}>Details</a></li>
-        <li><a href="#gallery" className={isActive4 ? 'active' : ''} onClick={handleClick4}>Gallery</a></li>
-        <li><a href="#venue" className={isActive5 ? 'active' : ''} onClick={handleClick5}>Venue</a></li>   
+        <li><a href="/#" className={isActive1 ? 'active' : 'not'} onClick={handleClick1}>Home</a></li>
+        <li><a href="#time" className={isActive2 ? 'active' : 'not'} onClick={handleClick2}>TimeLine</a></li>
+        <li><a href="#details" className={isActive3 ? 'active' : 'not'} onClick={handleClick3}>Details</a></li>
+        <li><a href="#gallery" className={isActive4 ? 'active' : 'not'} onClick={handleClick4}>Gallery</a></li>
+        <li><a href="#venue" className={isActive5 ? 'active' : 'not'} onClick={handleClick5}>Venue</a></li>   
       </div>
+      <button className="button-reg-top"><a href="https://opnform.com/forms/submit-research-papers-udbrsb" rel="noreferrer" target="_blank" className="link-top">Register Now</a></button>         
       <button className='mobile-menu-icon' onClick={handleClick}>
       {isMobile?
-                (<FaTimes size={20} style={{color:"white"}}/>):
-                (<FaBars size={20} style={{color:"white"}}/>)
+                (<FaTimes size={20} style={{color:"black"}} />):
+                (<FaBars size={20} style={{color:"black"}} />)
             }
       </button>  
     </div>
-    </>
+    </div>
   )
 }
 
