@@ -48,6 +48,7 @@ a {
 .nav-items li a {
     margin-right: 2rem;
     transition: all 0.3s ease-in;
+    z-index: 7;
 }
 .nav-items li a:hover{  
     color: #F79327;
@@ -105,6 +106,7 @@ a {
     }
 
     .nav-items-mobile {
+        z-index: 5;
         position: fixed;
         display: flex;
         flex-direction: column;

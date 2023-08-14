@@ -10,6 +10,7 @@ import Navbar from './navbar';
 import TimeLine from './timeline';
 import Hero from './hero';
 import Glimpse from './short_para';
+import About from './about_us';
 
 function App() {
 
@@ -24,16 +25,12 @@ function App() {
       <Glimpse/>
       <TimeLine/>
       <DetailsPage/>
-      <Venue/>
+      <Venue />
+      <About/>
       <PartPage />
       <div className='floating' onClick={handleClick}>
         <Fab style={{color:"#79f23f"}}>
           <KeyboardDoubleArrowUpIcon />
-        </Fab>
-      </div>
-      <div className='floating-left'>
-        <Fab style={{color:"black", fontSize:"5px"}} >
-          <InfoIcon />
         </Fab>
       </div>
       <Footer/>

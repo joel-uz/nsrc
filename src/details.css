@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 .others{
     display: flex;
@@ -19,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .card{
     display: flex;
@@ -31,6 +33,17 @@
     border-radius: 15px;
     box-shadow: 5px 10px rgba(139, 137, 137,0.8);
 }
+
+.card-guide{
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2.5px solid rgb(73, 68, 68);
+    border-radius: 15px;
+    box-shadow: 5px 10px rgba(139, 137, 137,0.8);
+}
+
 .images-head{
     width: 100%;
     height: auto;
@@ -70,6 +83,9 @@
     width: 80%;
     font-weight: 600;
     margin: auto;
+}
+.no-button{
+    display: none;
 }
 
 .button-green-reg:hover{

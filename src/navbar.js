@@ -13,6 +13,8 @@ const Navbar = () => {
     setIsActive3(false);
     setIsActive4(false);
     setIsActive5(false);
+    setIsMobile(false);
+    
   };
 
   const [isActive2, setIsActive2] = useState(false);
@@ -22,6 +24,7 @@ const Navbar = () => {
     setIsActive3(false);
     setIsActive4(false);
     setIsActive5(false);
+    setIsMobile(false);
   };
   
   const [isActive3, setIsActive3] = useState(false);
@@ -31,6 +34,8 @@ const Navbar = () => {
     setIsActive2(false);
     setIsActive4(false);
     setIsActive5(false);
+    
+    setIsMobile(false);
   };
 
   const [isActive4, setIsActive4] = useState(false);
@@ -40,6 +45,7 @@ const Navbar = () => {
     setIsActive2(false);
     setIsActive3(false);
     setIsActive5(false);
+    setIsMobile(false);
     };
     
   const [isActive5, setIsActive5] = useState(false);
@@ -49,9 +55,11 @@ const Navbar = () => {
     setIsActive2(false);
     setIsActive3(false);
     setIsActive4(false);
+    setIsMobile(false);
   };
 
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
+
   const handleClick=()=>{
     if(isMobile)
     setIsMobile(false);
@@ -68,10 +76,10 @@ const Navbar = () => {
         <li><a href="#home" className={isActive1 ? 'active' : 'not'} onClick={handleClick1}>Home</a></li>
         <li><a href="#time" className={isActive2 ? 'active' : 'not'} onClick={handleClick2}>TimeLine</a></li>
         <li><a href="#details" className={isActive3 ? 'active' : 'not'} onClick={handleClick3}>Details</a></li>
-        <li><a href="#gallery" className={isActive4 ? 'active' : 'not'} onClick={handleClick4}>Gallery</a></li>
+        <li><a href="#about" className={isActive4 ? 'active' : 'not'} onClick={handleClick4}>Gallery</a></li>
         <li><a href="#venue" className={isActive5 ? 'active' : 'not'} onClick={handleClick5}>Venue</a></li>   
       </div>
-      <button className="button-reg-top"><a href="https://opnform.com/forms/submit-research-papers-udbrsb" rel="noreferrer" target="_blank" className="link-top">Register Now</a></button>         
+      <button className="button-reg-top"><a href="#reg" className="link-top">Register Now</a></button>         
       <button className='mobile-menu-icon' onClick={handleClick}>
       {isMobile?
                 (<FaTimes size={20} style={{color:"black"}} />):
