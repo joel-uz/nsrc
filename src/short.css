@@ -12,10 +12,19 @@
 
 .presents-rev{
     margin: 0;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     font-family: "Poppins";
     font-size: 250%;
     color: black;
     font-weight: 400;
     text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .glimpse-total{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
 }

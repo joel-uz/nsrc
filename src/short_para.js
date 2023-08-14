@@ -4,7 +4,7 @@ const Glimpse = () => {
     return (
         <div className="glimpse-total">
             <div className="short">
-                <p className="presents-rev">2ⁿᵈ National Symposium & Research Colloquium</p><br />
+                <p className="presents-rev">3<sup>rd</sup> National Symposium & Research Colloquium</p><br />
                 <hr className="ruler"/>
                 <p className="presents-rev">A two-day hybrid summit of talks, activities, and paper presentations</p>
                 <br />

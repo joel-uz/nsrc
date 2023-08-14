@@ -116,6 +116,9 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .time-main{
+    margin-top: 50px;
+  }
   .items{
     flex-direction: column;
     justify-content: center;
