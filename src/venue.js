@@ -2,7 +2,7 @@ import "./venue.css"
 
 const Venue = () => {
     return (
-        <div className="venue-main">
+        <div className="venue-main" id="venue">
             <h1 className="title">Venue And Contact</h1>
             <div className="clubbed">
                 <div className="venue-text">

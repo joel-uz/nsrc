@@ -5,7 +5,7 @@ import image3 from "./assets/about/c.jpg"
 
 const DetailsPage = () => {
     return (
-        <div className="details-main">
+        <div className="details-main" id="details">
             <h1 className="title">About The Event</h1>
             <div className="others">
                 <div className="content-part">

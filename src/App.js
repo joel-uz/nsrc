@@ -8,17 +8,26 @@ import Footer from './footer';
 import DetailsPage from './details';
 import Navbar from './navbar';
 import TimeLine from './timeline';
+import Hero from './hero';
+import Glimpse from './short_para';
 
 function App() {
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);   
+  }
+
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+      <Hero />
+      <Glimpse/>
       <TimeLine/>
       <DetailsPage/>
       <Venue/>
       <PartPage />
-      <div className='floating'>
-        <Fab style={{color:"#79f23f"}} >
+      <div className='floating' onClick={handleClick}>
+        <Fab style={{color:"#79f23f"}}>
           <KeyboardDoubleArrowUpIcon />
         </Fab>
       </div>

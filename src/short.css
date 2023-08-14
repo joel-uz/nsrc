@@ -1,0 +1,21 @@
+.glimpse-total{
+    width: 100%;
+    margin-top: 3%;
+}
+.ruler{
+    width: 50%;
+    text-align: center;
+    height: 2px;
+    border:1px solid #79f23f;
+    background-color: #79f23f;
+}
+
+.presents-rev{
+    margin: 0;
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 250%;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}

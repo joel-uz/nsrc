@@ -9,26 +9,46 @@ const Navbar = () => {
   const handleClick1 = event => {
     // setIsActive1(current => !current);
     setIsActive1(true);
+    setIsActive2(false);
+    setIsActive3(false);
+    setIsActive4(false);
+    setIsActive5(false);
   };
 
   const [isActive2, setIsActive2] = useState(false);
   const handleClick2 = event => {
     setIsActive2(true);
+    setIsActive1(false);
+    setIsActive3(false);
+    setIsActive4(false);
+    setIsActive5(false);
   };
   
   const [isActive3, setIsActive3] = useState(false);
   const handleClick3 = event => {
     setIsActive3(true);
+    setIsActive1(false);
+    setIsActive2(false);
+    setIsActive4(false);
+    setIsActive5(false);
   };
 
   const [isActive4, setIsActive4] = useState(false);
   const handleClick4 = event => {
     setIsActive4(true);
+    setIsActive1(false);
+    setIsActive2(false);
+    setIsActive3(false);
+    setIsActive5(false);
     };
     
   const [isActive5, setIsActive5] = useState(false);
   const handleClick5 = event => {
     setIsActive5(true);
+    setIsActive1(false);
+    setIsActive2(false);
+    setIsActive3(false);
+    setIsActive4(false);
   };
 
   const [isMobile, setIsMobile] = useState(false)
@@ -45,7 +65,7 @@ const Navbar = () => {
         <img src={Logo} alt='logo' className='logo-resizer'/>
       </div>
       <div className={isMobile ? "nav-items-mobile" : "nav-items"} >
-        <li><a href="/#" className={isActive1 ? 'active' : 'not'} onClick={handleClick1}>Home</a></li>
+        <li><a href="#home" className={isActive1 ? 'active' : 'not'} onClick={handleClick1}>Home</a></li>
         <li><a href="#time" className={isActive2 ? 'active' : 'not'} onClick={handleClick2}>TimeLine</a></li>
         <li><a href="#details" className={isActive3 ? 'active' : 'not'} onClick={handleClick3}>Details</a></li>
         <li><a href="#gallery" className={isActive4 ? 'active' : 'not'} onClick={handleClick4}>Gallery</a></li>
