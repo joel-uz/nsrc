@@ -2,9 +2,27 @@ import React from 'react'
 import './navbar.css'
 import {useState} from 'react';
 import Logo from './assets/others/logo.png'
-import {FaTimes,FaBars} from 'react-icons/fa'
+import { FaTimes, FaBars } from 'react-icons/fa'
+import { useEffect } from 'react';
 
 const Navbar = () => {
+
+  const [stickyClass, setStickyClass] = useState('');
+
+   useEffect(() => {
+    window.addEventListener('scroll', stickNavbar);
+    return () => window.removeEventListener('scroll', stickNavbar);
+   }, []);
+  
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      // window height changed for the demo
+      windowHeight > 150 ? setStickyClass('sticky-nav') : setStickyClass('');
+    }
+  };
+
+
   const [isActive1, setIsActive1] = useState(true);
   const handleClick1 = event => {
     // setIsActive1(current => !current);
@@ -67,7 +85,7 @@ const Navbar = () => {
       setIsMobile(true);
   }
   return (
-    <div className='top-part-nav'>
+    <div className={`top-part-nav${stickyClass}`}>
     <div className='navbar'>
       <div className='logo'>
         <img src={Logo} alt='logo' className='logo-resizer'/>

@@ -9,22 +9,30 @@
     background: transparent;
 }
 
-li {
-    list-style: none;
+.top-part-navsticky-nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    top: 0;
+    z-index: 1000;
 }
-
-a {
+.top-part-navsticky-nav .not{
     font-family: "Poppins";
     color: black;
     text-decoration: none;
     font-size: 20px;
 }
 
+li {
+    list-style: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.6);
+    background: transparent;
     height: fit-content;
 }
 
@@ -55,6 +63,9 @@ a {
 }
 
 .active {
+    font-family: "Poppins";
+    text-decoration: none;
+    font-size: 20px;
     color: rgba(18, 245, 18,0.7);
 }
 
@@ -79,12 +90,20 @@ a {
     color: black;
 }
 .link-top{
-    font-size: 15px;
+    font-size: 17px;
     color: #ffffff;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
+.not{
+    color: #ffffff;
+}
+
 .active, .not{
+    font-family: "Poppins";
+    text-decoration: none;
+    font-size: 20px;
     margin: auto; 
     display: flex; /* CSS3 */
     align-items: center; /* Vertical align */

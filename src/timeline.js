@@ -4,9 +4,9 @@ function Item({ id }) {
 
 
   const content = [{ 'title': "Abstract Submission Starts", 'date': "23rd August 2023"},
-  { 'title': "Abstact Submission Ends", 'date': "30th September 2023" },
+  { 'title': "Abstract Submission Ends", 'date': "30th September 2023" },
   { 'title': "Notification of Acceptance of Abstract", 'date': "10th October 2023" },
-  { 'title': "Deadline for Regsitration", 'date': "20th October 2023" },
+  { 'title': "Deadline for Registration", 'date': "20th October 2023" },
   { 'title': "NSRC Official Event starts", 'date': "3rd November 2023" },
   { 'title': "Event End Date", 'date': "4rd November 2023" }];
   
