@@ -65,10 +65,10 @@ const DetailsPage = () => {
         viewport={{ once: true }} className="card-guide">
                         <p className="text-heading">Abstract Submission Guidelines</p>
                         <p className="content-text">
-                           1. The abstract length is limited to 1000 words. <br/>
-                            2.Your publications from the work also may be included at the end of the abstract page.<br/>
-                            3.The Abstract should be submitted through the given portal and no other submissions are allowed.<br/>
-                            4.The abstract template can be downloaded using this link.
+                           1. The abstract length is limited to 1000 words. <br/><br/>
+                            2.Your publications from the work also may be included at the end of the abstract page.<br/><br/>
+                            3.The Abstract should be submitted through the given portal and no other submissions are allowed.<br/><br/>
+                            4.The abstract template can be downloaded using this link.<br/>
                         </p>
                         <center><Checkbox onChange={onChange} className="content-text">I abide by the rules and regulations</Checkbox></center>
                     </motion.div>
