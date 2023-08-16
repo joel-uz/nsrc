@@ -1,4 +1,5 @@
 import "./timeline.css";
+import { motion } from "framer-motion";
 
 function Item({ id }) {
 
@@ -11,12 +12,13 @@ function Item({ id }) {
   { 'title': "Event End Date", 'date': "4rd November 2023" }];
   
   return (
-      <div className="top">
+      <motion.div className="top" initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }} >
         <div className="time-content">
           <p className="time-heading">{content[id]['date']}</p>
           <p className= {"time-event"}>{content[id]['title']}</p>
         </div>
-      </div>
+      </motion.div>
   );
 }
 

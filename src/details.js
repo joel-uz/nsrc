@@ -4,6 +4,7 @@ import image2 from "./assets/about/b.jpg"
 import image3 from "./assets/about/c.jpg"
 import { Checkbox } from 'antd';
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 const DetailsPage = () => {
@@ -19,7 +20,10 @@ const DetailsPage = () => {
             <h1 className="title"> Our Event </h1>
             <div className="others">
                 <div className="content-part">
-                <div className="card">
+                <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }} className="card">
                     <img src={image1} alt="content" className="images-head" />
                     <p className="text-heading">Technical Workshops</p>
                     <p className="content-text">
@@ -27,8 +31,11 @@ const DetailsPage = () => {
                         equipping participants with practical skills and knowledge in various
                         domains of technology. 
                     </p>
-                </div>
-                <div className="card">
+                </motion.div>
+                <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }} className="card">
                     <img src={image2} alt="content" className="images-head" />
                     <p className="text-heading">Tech Talks</p>
                     <p className="content-text">
@@ -36,8 +43,11 @@ const DetailsPage = () => {
                         together industry experts, researchers, and enthusiasts from diverse backgrounds.
                         
                     </p>
-                </div>
-                <div className="card">
+                </motion.div>
+                <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }} className="card">
                     <img src={image3} alt="content" className="images-head" />
                     <p className="text-heading">Paper Presentations</p>
                     <p className="content-text">
@@ -45,11 +55,14 @@ const DetailsPage = () => {
                         where researchers, academicians, and industry professionals showcase 
                         their cutting-edge work.  
                     </p>
-                </div>
+                </motion.div>
                 </div>
                 <div className="ask" id="reg">
                     <p className="ask-text">Register for NSRC 2023 at NIT Calicut Through the typeform below</p>
-                    <div className="card-guide">
+                    <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }} className="card-guide">
                         <p className="text-heading">Abstract Submission Guidelines</p>
                         <p className="content-text">
                            1. The abstract length is limited to 1000 words. <br/>
@@ -57,8 +70,8 @@ const DetailsPage = () => {
                             3.The Abstract should be submitted through the given portal and no other submissions are allowed.<br/>
                             4.The abstract template can be downloaded using this link.
                         </p>
-                        <Checkbox onChange={onChange}>I abide by the rules and regulations</Checkbox>
-                    </div>
+                        <center><Checkbox onChange={onChange} className="content-text">I abide by the rules and regulations</Checkbox></center>
+                    </motion.div>
                     <button className= {tick? "button-green-reg":"no-button"} disabled={true}><a href="https://opnform.com/forms/submit-research-papers-udbrsb" rel="noreferrer" target="_blank" className="link" disabled={!tick}>Register Now</a></button>
                 </div>
             </div>
