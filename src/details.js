@@ -62,7 +62,7 @@ const DetailsPage = () => {
                     <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }} className="card-guide">
+        viewport={{ once: true }} className="card-guide" id="abstract"> 
                         <p className="text-heading">Abstract Submission Guidelines</p>
                         <p className="content-text">
                            1. The abstract length is limited to 1000 words. <br/><br/>
@@ -72,7 +72,7 @@ const DetailsPage = () => {
                         </p>
                         <center><Checkbox onChange={onChange} className="content-text">I abide by the rules and regulations</Checkbox></center>
                     </motion.div>
-                    <button className= {tick? "button-green-reg":"no-button"} disabled={true}><a href="https://opnform.com/forms/submit-research-papers-udbrsb" rel="noreferrer" target="_blank" className="link" disabled={!tick}>Register Now</a></button>
+                    <button className= {tick? "button-green-reg":"no-button"} disabled={true}><a href="https://opnform.com/forms/submit-research-papers-udbrsb" rel="noreferrer" target="_blank" className="link" disabled={!tick}>Submit Abstract</a></button>
                 </div>
             </div>
         </div>

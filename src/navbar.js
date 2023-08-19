@@ -94,7 +94,7 @@ const Navbar = () => {
         <li><a href="/" className={isActive1 ? 'active' : 'not'} onClick={handleClick1}>Home</a></li>
         <li><a href="#time" className={isActive2 ? 'active' : 'not'} onClick={handleClick2}>TimeLine</a></li>
         <li><a href="#details" className={isActive3 ? 'active' : 'not'} onClick={handleClick3}>Details</a></li>
-        <li><a href="#about" className={isActive4 ? 'active' : 'not'} onClick={handleClick4}>Gallery</a></li>
+        <li><a href="#about" className={isActive4 ? 'active' : 'not'} onClick={handleClick4}>About</a></li>
         <li><a href="#venue" className={isActive5 ? 'active' : 'not'} onClick={handleClick5}>Venue</a></li>   
       </div>
       <button className="button-reg-top"><a href="#reg" className="link-top">Register Now</a></button>         
