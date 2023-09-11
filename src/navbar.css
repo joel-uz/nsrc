@@ -114,7 +114,38 @@ li {
     display: none;
 }
 
+.text{
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.down{
+    color: #ffffff;
+}
+.top-part-navsticky-nav .text{
+    color: black;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+}
 @media screen and (max-width: 960px) {
+    .down{
+    color: #000;
+    }
+    .text{
+        text-align: center;
+        width: 100%;
+        transition: all 0.5s ease;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 30px;
+        text-decoration: 2px overline;
+        text-decoration-color: rgba(18, 245, 18,0.7);
+    }
+
     .button-reg-top{
         display: none;
     }
@@ -158,7 +189,7 @@ li {
         color: black;
         margin-bottom: 30px;
         text-decoration: 2px overline;
-        text-decoration-color: rgba(18, 245, 18,0.7);;
+        text-decoration-color: rgba(18, 245, 18,0.7);
     }
 
     .nav-items {

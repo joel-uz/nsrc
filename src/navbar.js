@@ -4,6 +4,9 @@ import {useState} from 'react';
 import Logo from './assets/others/logo.png'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { useEffect } from 'react';
+import { DownOutlined } from '@ant-design/icons';
+
+import { Button, Dropdown,Space } from 'antd';
 
 const Navbar = () => {
 
@@ -21,6 +24,32 @@ const Navbar = () => {
       windowHeight > 150 ? setStickyClass('sticky-nav') : setStickyClass('');
     }
   };
+  const items = [
+  {
+    key: '1',
+    label: (
+      <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+        Call for papers
+      </a>
+    ),
+  },
+  {
+    key: '2',
+    label: (
+      <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+        Tracks/Topics
+      </a>
+    ),
+  },
+  {
+    key: '3',
+    label: (
+      <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        Submission Instructions
+      </a>
+    ),
+  },
+  ];
 
 
   const [isActive1, setIsActive1] = useState(true);
@@ -95,7 +124,17 @@ const Navbar = () => {
         <li><a href="#time" className={isActive2 ? 'active' : 'not'} onClick={handleClick2}>TimeLine</a></li>
         <li><a href="#details" className={isActive3 ? 'active' : 'not'} onClick={handleClick3}>Details</a></li>
         <li><a href="#about" className={isActive4 ? 'active' : 'not'} onClick={handleClick4}>About</a></li>
-        <li><a href="#venue" className={isActive5 ? 'active' : 'not'} onClick={handleClick5}>Venue</a></li>   
+        <li><a href="#venue" className={isActive5 ? 'active' : 'not'} onClick={handleClick5}>Venue</a></li> 
+        <Dropdown
+        menu={{
+          items,
+        }}
+      >
+            <Space>
+              <li className='text'> Call For Papers</li>
+        <DownOutlined className='down' />
+      </Space>
+      </Dropdown>
       </div>
       <button className="button-reg-top"><a href="#reg" className="link-top">Register Now</a></button>         
       <button className='mobile-menu-icon' onClick={handleClick}>
